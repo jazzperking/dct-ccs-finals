@@ -38,6 +38,9 @@ include './partials/side-bar.php';
                 </div>
             </div>
         </div>
-    </div>    
+    </div>   
 </main>
 <!-- Template Files here -->
+<?php
+include include('../partials/footer.php');
+?>
