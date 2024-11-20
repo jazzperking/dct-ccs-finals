@@ -1,6 +1,3 @@
-<?php  
- // All project functions should be placed here
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,10 +9,37 @@
     <title></title>
 </head>
 
+<?php
+
+session_start();
+include 'functions.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+   
+    $userEmail = $_POST['email'];
+    $userPassword = md5($_POST['password']);
+
+    $dbConnection = connectToDatabase(); 
+    $query = $dbConnection->prepare("SELECT * FROM users WHERE email = ? AND password = ?");
+    $query->bind_param("ss", $userEmail, $userPassword);
+    $query->execute();
+    $queryResult = $query->get_result();
+
+    if ($queryResult->num_rows > 0) {
+        $_SESSION['loggedInUser'] = $userEmail; // Updated session variable name
+        header("Location: admin/dashboard.php");
+        exit();
+    } else {
+        $loginError = "Invalid email or password!";
+    }
+    $query->close();
+    $dbConnection->close();
+}
+?>
+
 <body class="bg-secondary-subtle">
     <div class="d-flex align-items-center justify-content-center vh-100">
         <div class="col-3">
-            <!-- Server-Side Validation Messages should be placed here -->
             <div class="card">
                 <div class="card-body">
                     <h1 class="h3 mb-4 fw-normal">Login</h1>
