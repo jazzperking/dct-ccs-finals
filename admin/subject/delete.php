@@ -8,8 +8,8 @@ include ('../partials/side-bar.php');
             <h2>Delete Subject</h2>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                    <li class="breadcrumb-item"><a href="#">Add Subject</a></li>
+                    <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a href="/admin/subject/add.php">Add Subject</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Delete Subject</li>
                 </ol>
             </nav>
