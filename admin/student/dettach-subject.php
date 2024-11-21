@@ -1,4 +1,5 @@
 <?php
+$title='Detach Subject';
 include('../partials/header.php');
 include ('../partials/side-bar.php');
 ?>

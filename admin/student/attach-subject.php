@@ -1,4 +1,5 @@
 <?php
+$title='Attach Students';
 include('../partials/header.php');
 include ('../partials/side-bar.php');
 ?>

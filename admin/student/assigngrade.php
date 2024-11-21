@@ -1,4 +1,5 @@
 <?php
+$title='Asign Grade';
 include('../partials/header.php');
 include ('../partials/side-bar.php');
 ?>

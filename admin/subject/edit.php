@@ -1,4 +1,5 @@
 <?php
+$title='Edit Subject';
 ob_start(); // Start output buffering
 include('../partials/header.php');
 include('../partials/side-bar.php');
