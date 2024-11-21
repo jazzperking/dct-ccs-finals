@@ -27,5 +27,5 @@ include ('../partials/side-bar.php');
         </div>
     </div>
     <?php
-    include include('../partials/footer.php');
+     include('../partials/footer.php');
     ?>

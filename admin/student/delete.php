@@ -76,6 +76,10 @@ if (isset($_GET['confirm']) && $_GET['confirm'] == 'true') {
     $stmt->close();
 }
 
+include('../partials/footer.php');
 $conn->close();
 ob_end_flush(); // End output buffering
 ?>
+
+
+
