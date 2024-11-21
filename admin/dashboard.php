@@ -42,5 +42,5 @@ include './partials/side-bar.php';
 </main>
 <!-- Template Files here -->
 <?php
-  include('../partials/footer.php');
+  include ('../partials/footer.php');
 ?>
