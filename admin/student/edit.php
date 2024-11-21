@@ -1,6 +1,7 @@
 <?php
 include('../partials/header.php');
 include ('../partials/side-bar.php');
+
 ?>
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-5"> 
     <div class="content flex-grow-1">   
@@ -26,7 +27,7 @@ include ('../partials/side-bar.php');
                         <label for="lastName" class="form-label">Last Name</label>
                         <input type="text" class="form-control" id="lastName" value="Tullao">
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Update Student</button>
+                    <button type="submit" class="btn btn-primary w-100">Add Student</button>
                 </form>
             </div>
         </div>

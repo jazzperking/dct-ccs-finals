@@ -36,6 +36,6 @@ include ('../partials/side-bar.php');
     </div>
 </body>
 <?php
-include include('../partials/footer.php');
+include('../partials/footer.php');
 ?>
 
