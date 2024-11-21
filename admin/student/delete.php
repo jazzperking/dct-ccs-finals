@@ -1,4 +1,5 @@
 <?php
+$title='Delete Students';
 ob_start(); // Start output buffering to prevent headers already sent errors
 session_start(); // Ensure session starts before any output
 

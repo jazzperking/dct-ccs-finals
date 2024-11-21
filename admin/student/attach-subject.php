@@ -1,4 +1,5 @@
 <?php
+$title='Attach Students';
 include('../partials/header.php');
 include ('../partials/side-bar.php');
 ?>
@@ -21,24 +22,16 @@ include ('../partials/side-bar.php');
                     </ul>
                     <hr>
                     <form>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="subject1">
-                            <label class="form-check-label" for="subject1">
-                                1001 - English
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="subject2">
-                            <label class="form-check-label" for="subject2">
-                                1002 - Mathematics
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="subject3">
-                            <label class="form-check-label" for="subject3">
-                                1003 - Science
-                            </label>
-                        </div>
+                    <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Selected Student Information</h5>
+                    <p class="card-text">
+                        <strong>Student ID:</strong> 1001<br>
+                        <strong>Name:</strong> Renmark Salalila
+                    </p>
+                    <p class="text-muted">No subjects available to attach.</p>
+                </div>
+            </div>
                         <button type="submit" class="btn btn-primary mt-3">Attach Subjects</button>
                     </form>
                 </div>
@@ -74,4 +67,4 @@ include ('../partials/side-bar.php');
 </body>
 <?php
  include('../partials/footer.php');
-?>
+?> 

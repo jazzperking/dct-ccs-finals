@@ -1,4 +1,5 @@
 <?php
+$title='Asign Grade';
 include('../partials/header.php');
 include ('../partials/side-bar.php');
 ?>
@@ -13,25 +14,25 @@ include ('../partials/side-bar.php');
                     <li class="breadcrumb-item active" aria-current="page">Assign Grade to Subject</li>
                 </ol>
             </nav>
-            <div class="card">
-                <h5>Selected Student and Subject Information</h5>
-                <ul>
-                    <li><strong>Student ID:</strong> 1001</li>
-                    <li><strong>Name:</strong> Renmark Salalila</li>
-                    <li><strong>Subject Code:</strong> 1001</li>
-                    <li><strong>Subject Name:</strong> English</li>
-                </ul>
-                <form>
-                    <div class="mb-3">
-                        <label for="grade" class="form-label">Grade</label>
-                        <input type="number" class="form-control" id="grade" value="99.00">
-                    </div>
-                    <div class="mb-5">
+            <div class="card" style="margin: 20px;">    
+            <h5 style="margin-bottom: 15px;">Selected Student and Subject Information</h5>
+            <ul style="margin-bottom: 15px;">
+                <li><strong>Student ID:</strong> 1001</li>
+                <li><strong>Name:</strong> Renmark Salalila</li>
+                <li><strong>Subject Code:</strong> 1001</li>
+                <li><strong>Subject Name:</strong> English</li>
+            </ul>
+            <form>
+                <div class="mb-3" style="margin-bottom: 15px;">
+                    <label for="grade" class="form-label">Grade</label>
+                    <input type="number" class="form-control" id="grade" value="99.00">
+                </div>
+                <div class="mb-5" style="margin-top: 15px;">
                     <button type="button" class="btn btn-secondary">Cancel</button>
                     <button type="submit" class="btn btn-primary">Assign Grade to Subject</button>
-                    </div>
-                </form>
-            </div>
+                </div>
+            </form>
+        </div>
         </div>
     </div>
 </body>

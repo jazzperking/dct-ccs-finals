@@ -1,4 +1,5 @@
 <?php
+$title='Students';
 ob_start();
 session_start();
 include('../partials/header.php');
