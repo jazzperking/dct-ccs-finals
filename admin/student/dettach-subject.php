@@ -2,6 +2,8 @@
 $title='Detach Subject';
 include('../partials/header.php');
 include ('../partials/side-bar.php');
+ob_start(); // Start output buffering to prevent headers already sent error
+session_start(); 
 ?>
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-5"> 
     <div class="content flex-grow-1">
@@ -32,4 +34,5 @@ include ('../partials/side-bar.php');
 </main>
 <?php
  include('../partials/footer.php');
-?>
+ ob_end_flush();
+ ?>
