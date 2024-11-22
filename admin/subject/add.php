@@ -1,5 +1,5 @@
 <?php
-$title='Subject';
+$title = 'Add a New Subject';
 ob_start(); // Start output buffering to prevent headers already sent error
 session_start(); // Start the session
 
@@ -84,8 +84,15 @@ $conn->close();
         <div class="card p-3 mb-4">
             <form action="" method="POST">
                 <!-- Prepopulate input fields with previously entered values if they exist -->
-                <input type="text" class="form-control mb-3" name="subjectCode" placeholder="Subject Code" value="<?php echo isset($subjectCode) ? htmlspecialchars($subjectCode) : ''; ?>" >
-                <input type="text" class="form-control mb-3" name="subjectName" placeholder="Subject Name" value="<?php echo isset($subjectName) ? htmlspecialchars($subjectName) : ''; ?>" >
+                <div class="form-group">
+                    <label for="subjectCode">Subject Code</label>
+                    <!-- Use type="number" to allow only numeric input for Subject Code -->
+                    <input type="number" class="form-control mb-3" name="subjectCode" placeholder="Enter Subject Code" value="<?php echo isset($subjectCode) ? htmlspecialchars($subjectCode) : ''; ?>" required>
+                </div>
+                <div class="form-group">
+                    <label for="subjectName">Subject Name</label>
+                    <input type="text" class="form-control mb-3" name="subjectName" placeholder="Enter Subject Name" value="<?php echo isset($subjectName) ? htmlspecialchars($subjectName) : ''; ?>" required>
+                </div>
                 <button type="submit" class="btn btn-primary w-100">Add Subject</button>
             </form>
         </div>

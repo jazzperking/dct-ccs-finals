@@ -2,7 +2,8 @@
 $title='Dashboard';
 include('./partials/header.php');
 include('./partials/side-bar.php');
-include('../functions.php'); // Include functions.php to access the database connection
+include('../functions.php');
+// Include functions.php to access the database connection
 
 // Connect to the database
 $conn = connectToDatabase();
@@ -98,4 +99,4 @@ $conn->close();
 <!-- Footer --> 
 <?php
 include('partials/footer.php');
-?>
+ob_end_flush();?>

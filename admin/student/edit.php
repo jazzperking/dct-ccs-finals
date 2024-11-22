@@ -2,7 +2,6 @@
 $title='Edit Students';
 ob_start(); // Start output buffering to prevent headers already sent error
 session_start(); // Start the session
-
 include('../partials/header.php');
 include('../partials/side-bar.php');
 include '../../functions.php';
